@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Galerie</title>
+</head>
+
+<body class="font-[Montserrat]">
+    <header>
+        <nav class="bg-[#C66B49] p-4">
+
+            <div class="mx-auto flex items-center justify-between">
+                <!-- Logo -->
+                <p class="text-lg font-light text-white">
+                    Atelier Ceramique Lyon
+                </p>
+
+                <!-- Bouton hamburger (mobile) -->
+                <button id="menu-btn" class="md:hidden text-white text-2xl">
+                    ☰
+                </button>
+
+                <!-- Menu desktop -->
+                <ul class="hidden md:flex gap-6 text-white">
+                    <li><a href="../index.html">Accueil</a></li>
+                    <li><a href="#">Galerie</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+
+            </div>
+
+            <!-- Menu mobile -->
+            <ul id="mobile-menu" class="hidden flex flex-col gap-4 mt-4 md:hidden text-white">
+                <li><a href="../index.html">Accueil</a></li>
+                <li><a href="#">Galerie</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <main class="flex flex-col justify-center">
+
+        <section class="p-15">
+            <h1 class="text-4xl font-semibold text-center pb-5">Notre galerie</h1>
+
+            <p class="text-base text-center ">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus cursus dictum velit nec facilisis.
+                Aliquam erat volutpat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
+                curae; Praesent nec metus id lectus aliquet sollicitudin. Sed ut molestie velit, sed pulvinar mauris.
+                Quisque pulvinar ullamcorper sapien sit amet vehicula. Donec fermentum sem in facilisis pulvinar. Nunc
+                pharetra, lacus a lacinia fermentum, enim mauris dapibus purus, id ultricies augue mauris vel nisl.
+                Praesent a viverra mauris. Nunc pulvinar odio erat, et viverra libero blandit nec. Vestibulum sed lectus
+                eu purus consectetur mattis. Suspendisse gravida ultrices augue, non semper est consequat sit amet.
+                Maecenas vitae mollis leo, sed blandit lorem.
+            </p>
+        </section>
+
+        <section class="grid grid-row-2 grid-cols-3 place-content-around place-items-center gap-10">
+
+            <div class="bg-[#F5F1E8] w-sm border group">
+
+                <div class="w-full h-50 relative">
+
+                    <img class="w-full h-full border-b object-cover" src="https://picsum.photos/200/200"
+                        alt="imagerandom">
+
+                    <div
+                        class="absolute inset-0 flex flex-col items-center justify-center bg-black/60 opacity-0 group-hover:opacity-100 transition duration-300">
+
+                        <h5 class="text-[#F7F3EE] text-2xl">Vase Terra</h5>
+
+                        <p class="text-[#F7F3EE] text-xs text-center px-2">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic dolor cum similique recusandae
+                            ipsum tempore, debitis quisquam accusamus, pariatur earum ut omnis? Numquam nobis et
+                            perferendis quos amet tempora explicabo?
+                        </p>
+
+                    </div>
+                </div>
+
+                <div class="flex flex-col items-center">
+                    <p class="text-xl text-center font-semibold">Vase Terra</p>
+                    <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+
+            </div>
+            <div class="bg-[#F5F1E8] w-sm border group">
+
+                <div class="w-full h-50 relative">
+
+                    <img class="w-full h-full border-b object-cover" src="https://picsum.photos/200/200"
+                        alt="imagerandom">
+
+                    <div
+                        class="absolute inset-0 flex flex-col items-center justify-center bg-black/60 opacity-0 group-hover:opacity-100 transition duration-300">
+
+                        <h5 class="text-[#F7F3EE] text-2xl">Bol Sable</h5>
+
+                        <p class="text-[#F7F3EE] text-xs text-center px-2">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic dolor cum similique recusandae
+                            ipsum tempore, debitis quisquam accusamus, pariatur earum ut omnis? Numquam nobis et
+                            perferendis quos amet tempora explicabo?
+                        </p>
+
+                    </div>
+                </div>
+
+                <div class="flex flex-col items-center">
+                    <p class="text-xl text-center font-semibold">Bol Sable</p>
+                    <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+
+            </div>
+            <div class="bg-[#F5F1E8] w-sm border group">
+
+                <div class="w-full h-50 relative">
+
+                    <img class="w-full h-full border-b object-cover" src="https://picsum.photos/200/200"
+                        alt="imagerandom">
+
+                    <div
+                        class="absolute inset-0 flex flex-col items-center justify-center bg-black/60 opacity-0 group-hover:opacity-100 transition duration-300">
+
+                        <h5 class="text-[#F7F3EE] text-2xl">Assiette Olive</h5>
+
+                        <p class="text-[#F7F3EE] text-xs text-center px-2">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic dolor cum similique recusandae
+                            ipsum tempore, debitis quisquam accusamus, pariatur earum ut omnis? Numquam nobis et
+                            perferendis quos amet tempora explicabo?
+                        </p>
+
+                    </div>
+                </div>
+
+                <div class="flex flex-col items-center">
+                    <p class="text-xl text-center font-semibold">Assiette Olive</p>
+                    <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+
+            </div>
+
+            <div class="bg-[#F5F1E8] w-sm border group">
+
+                <div class="w-full h-50 relative">
+
+                    <img class="w-full h-full border-b object-cover" src="https://picsum.photos/200/200"
+                        alt="imagerandom">
+
+                    <div
+                        class="absolute inset-0 flex flex-col items-center justify-center bg-black/60 opacity-0 group-hover:opacity-100 transition duration-300">
+
+                        <h5 class="text-[#F7F3EE] text-2xl">Tasse Lyon</h5>
+
+                        <p class="text-[#F7F3EE] text-xs text-center px-2">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic dolor cum similique recusandae
+                            ipsum tempore, debitis quisquam accusamus, pariatur earum ut omnis? Numquam nobis et
+                            perferendis quos amet tempora explicabo?
+                        </p>
+
+                    </div>
+                </div>
+
+                <div class="flex flex-col items-center">
+                    <p class="text-xl text-center font-semibold">Tasse Lyon</p>
+                    <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+
+            </div>
+
+            <div class="bg-[#F5F1E8] w-sm border group">
+
+                <div class="w-full h-50 relative">
+
+                    <img class="w-full h-full border-b object-cover" src="https://picsum.photos/200/200"
+                        alt="imagerandom">
+
+                    <div
+                        class="absolute inset-0 flex flex-col items-center justify-center bg-black/60 opacity-0 group-hover:opacity-100 transition duration-300">
+
+                        <h5 class="text-[#F7F3EE] text-2xl">Carafe Ocre</h5>
+
+                        <p class="text-[#F7F3EE] text-xs text-center px-2">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic dolor cum similique recusandae
+                            ipsum tempore, debitis quisquam accusamus, pariatur earum ut omnis? Numquam nobis et
+                            perferendis quos amet tempora explicabo?
+                        </p>
+
+                    </div>
+                </div>
+
+                <div class="flex flex-col items-center">
+                    <p class="text-xl text-center font-semibold">Carafe Ocre</p>
+                    <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+
+            </div>
+
+            <div class="bg-[#F5F1E8] w-sm border group">
+
+                <div class="w-full h-50 relative">
+
+                    <img class="w-full h-full border-b object-cover" src="https://picsum.photos/200/200"
+                        alt="imagerandom">
+
+                    <div
+                        class="absolute inset-0 flex flex-col items-center justify-center bg-black/60 opacity-0 group-hover:opacity-100 transition duration-300">
+
+                        <h5 class="text-[#F7F3EE] text-2xl">Plat Saône</h5>
+
+                        <p class="text-[#F7F3EE] text-xs text-center px-2">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic dolor cum similique recusandae
+                            ipsum tempore, debitis quisquam accusamus, pariatur earum ut omnis? Numquam nobis et
+                            perferendis quos amet tempora explicabo?
+                        </p>
+
+                    </div>
+                </div>
+
+                <div class="flex flex-col items-center">
+                    <p class="text-xl text-center font-semibold">Plat Saône</p>
+                    <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+
+            </div>
+
+
+        </section>
+
+    </main>
+
+    <footer class="bg-[#C66B49]">
+
+        <div>
+            <p>Adresse</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>
+
+        <div>
+            <p>Contact</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>
+
+        <div>
+            <p>Réseaux</p>
+            <div>
+                <img src="https://picsum.photos/100/100" alt="imagerandom">
+                <img src="https://picsum.photos/100/100" alt="imagerandom">
+                <img src="https://picsum.photos/100/100" alt="imagerandom">
+            </div>
+        </div>
+
+        <div>
+            <p>© 2026</p>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

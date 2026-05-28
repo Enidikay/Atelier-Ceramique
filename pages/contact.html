@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Contact</title>
+</head>
+
+<body>
+    <header>
+        <nav class="bg-primary d-flex justify-content-between p-2 align-items-center">
+            <p class="text-light m-1 ">Atelier Ceramique Lyon</p>
+            <ul class="list-inline d-flex gap-3 align-items-center m-1 ">
+                <li><a class="text-light text-decoration-none" href="../index.html">Acceuil</a></li>
+                <li><a class="text-light text-decoration-none" href="galerie.html">Galerie</a></li>
+                <li><a class="text-light text-decoration-none" href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="p-5">
+        <h1 class="text-center">Nous contacter</h1>
+        <section class="d-flex justify-content-center align-items-center gap-3">
+            <section class="bg-secondary card p-3">
+                <p class="fs-4">Formulaire</p>
+                <form action="#" method="post" class="container">
+                    <div class="nomprenom col">
+                        <label>Prénom <p class="star">*</p></label>
+                        <input name="prenom" type="text" required />
+
+                        <label>Nom <p class="star">*</p></label>
+                        <input name="nom" type="text" required />
+                    </div>
+                    <div class="row">
+                        <label>Email <p class="star">*</p></label>
+                        <input name="email" type="email" required />
+
+                        <label>Sujet: </label>
+
+                        <select name="sujet" id="Sujet">
+                            <option value="Info">Info</option>
+                            <option value="Commande">Commande</option>
+                            <option value="Autre">Autre</option>
+                        </select>
+
+                        <label>Message <p class="star">*</p></label>
+                        <textarea rows="5" cols="10" name="message" minlength="20" required></textarea>
+                        <div class="col">
+                            <p>J'accepte le traitement de mes données</p>
+                            <input name="traitement" type="checkbox" required>
+                        </div>
+
+                        <input type="submit" name="envoie">
+                    </div>
+                </form>
+            </section>
+
+            <aside class="bg-secondary card p-3">
+                <p class="fs-4">Infos pratiques</p>
+                <ul>
+                    <li>Adresse</li>
+                    <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum sunt cumque quis unde.</li>
+                </ul>
+                <ul>
+                    <li>Téléphone:</li>
+                    <li>XXXXXXXXXX</li>
+                </ul>
+                <ul>
+                    <li>Email</li>
+                    <li>blablablaal@exemple.com</li>
+                </ul>
+                <ul>
+                    <li>Carte</li>
+                    <li>mettre le iframe</li>
+                </ul>
+            </aside>
+        </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Atelier Ceramique Lyon</title>
+</head>
+
+<body class="font-[Montserrat]">
+    <header>
+        <nav class="bg-[#C66B49] p-4">
+
+            <div class="mx-auto flex items-center justify-between">
+                <!-- Logo -->
+                <p class="text-lg font-light text-white">
+                    Atelier Ceramique Lyon
+                </p>
+
+                <!-- Bouton hamburger (mobile) -->
+                <button id="menu-btn" class="md:hidden text-white text-2xl">
+                    ☰
+                </button>
+
+                <!-- Menu desktop -->
+                <ul class="hidden md:flex gap-6 text-white">
+                    <li><a href="#">Accueil</a></li>
+                    <li><a href="pages/galerie.html">Galerie</a></li>
+                    <li><a href="pages/contact.html">Contact</a></li>
+                </ul>
+
+            </div>
+
+            <!-- Menu mobile -->
+            <ul id="mobile-menu" class="hidden flex flex-col gap-4 mt-4 md:hidden text-white">
+                <li><a href="#">Accueil</a></li>
+                <li><a href="pages/galerie.html">Galerie</a></li>
+                <li><a href="pages/contact.html">Contact</a></li>
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <main>
+        <section
+            class="relative w-[100%] h-[500px] bg-[url('https://picsum.photos/1200/800')] bg-cover bg-center flex items-center justify-center">
+            <div class="absolute inset-0 bg-black opacity-75"></div>
+
+            <div class="absolute flex items-center justify-center flex-col gap-5">
+                <h1 class="text-4xl text-[#D08C72] font-semibold text-center">L'art de la céramique depuis 1998</h1>
+                <p class="text-2xl text-[#F7F3EE] text-center">Sous titre qui présente l'atelier</p>
+
+                <div class="mt-2 flex gap-5">
+                    <button class="bg-cover bg-[#D9A441] p-2 rounded-xl border text-center hover:amber-900">Voir la
+                        galerie</button>
+                    <button class="bg-cover bg-[#D9A441] p-2 rounded-xl border text-center">Nous contacter</button>
+                </div>
+
+            </div>
+        </section>
+
+        <div class="content p-15 flex flex-col md:gap-5 gap-10">
+            <section class="apropos">
+                <h2 class="text-2xl font-semibold text-center md:text-left">A propos</h2>
+
+                <div class="flex gap-5 pt-5 flex-col lg:flex-row">
+                    <img src="https://picsum.photos/700/300" alt="imagerandom">
+
+                    <p class="text-center md:text-left">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ac mauris eu erat aliquam
+                        consequat
+                        id
+                        lobortis tortor. Donec mollis pharetra ipsum, lobortis rutrum sem aliquet sit amet. Donec
+                        vel
+                        orci
+                        vitae nulla ornare egestas ut eu leo. Ut congue dictum egestas. Vestibulum interdum ipsum
+                        vitae
+                        odio
+                        pretium venenatis. Nullam augue sem, volutpat ut augue a, condimentum imperdiet ante.
+                        Curabitur
+                        in
+                        dolor turpis. Quisque gravida, felis vitae commodo malesuada, orci diam lacinia turpis,
+                        vitae
+                        lacinia sapien enim at mi. Vestibulum malesuada tincidunt dapibus. Nunc id est id neque
+                        dignissim
+                        mattis. Vestibulum tristique arcu ante, ac maximus nisi condimentum et. Suspendisse potenti.
+                        Duis
+                        iaculis mauris in suscipit imperdiet. Donec ac enim luctus lacus gravida maximus.
+                        <br><br>
+                        Integer placerat lacus quis consectetur faucibus. Ut at dui posuere, fringilla urna
+                        vehicula,
+                        imperdiet libero. In a diam vel dolor rhoncus convallis. Cras urna mauris, venenatis at nisi
+                        eget,
+                        venenatis congue dui. Nunc in orci vestibulum, feugiat neque eu, volutpat enim. Mauris
+                        bibendum,
+                        justo eget placerat consectetur, ante nisi volutpat urna, eget laoreet eros lectus vel
+                        lorem.
+                        Duis
+                        quis porttitor nunc. Etiam at accumsan purus, quis rutrum nulla. Mauris eu ligula quis
+                        mauris
+                        ultrices cursus non imperdiet libero. Suspendisse enim sapien, tempus et diam vel, vehicula
+                        pretium
+                        tellus. Etiam in lobortis enim. Aliquam eu convallis tortor. Curabitur feugiat, erat et
+                        bibendum
+                        feugiat, est metus pharetra dui, at porta dui diam sed nisi. Donec non massa dapibus,
+                        ultrices
+                        felis
+                        sed, pretium dui. Quisque iaculis justo nulla, ac congue quam fringilla nec.
+                    </p>
+                </div>
+            </section>
+
+
+            <section class="valeurs text-center md:text-left">
+                <h3 class="text-2xl font-semibold">Nos valeurs</h3>
+
+                <div class="cardContainer grid grid-cols-1 gap-6 pt-5 md:grid-cols-3 justify-items-center">
+
+                    <div class="bg-[#F5F1E8] flex flex-col p-5 gap-5 shadow-md items-center text-center">
+                        <img class="rounded-full w-20" src="https://picsum.photos/200/200" alt="imagerandom">
+                        <p class="text-3xl font-semibold">Artisanal</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam minima, explicabo, mollitia quo
+                            ipsa qui...</p>
+                    </div>
+
+                    <div class="bg-[#F5F1E8] flex flex-col p-5 gap-5 shadow-md items-center text-center">
+                        <img class="rounded-full w-20" src="https://picsum.photos/200/200" alt="imagerandom">
+                        <p class="text-3xl font-semibold">Durable</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam minima, explicabo, mollitia quo
+                            ipsa qui...</p>
+                    </div>
+
+                    <div class="bg-[#F5F1E8] flex flex-col p-5 gap-5 shadow-md items-center text-center">
+                        <img class="rounded-full w-20" src="https://picsum.photos/200/200" alt="imagerandom">
+                        <p class="text-3xl font-semibold">Unique</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam minima, explicabo, mollitia quo
+                            ipsa qui...</p>
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section class="selection text-center md:text-left">
+                <h4 class="text-2xl font-semibold">Sélection</h4>
+
+                <div class="grid grid-cols-1 md:grid-cols-4 pt-5 gap-3 justify-items-center">
+                    <img class="h-70 w-100 object-cover " src="https://picsum.photos/200/200" alt="imagerandom">
+                    <img class="h-70 w-100 object-cover" src="https://picsum.photos/200/200" alt="imagerandom">
+                    <img class="h-70 w-100 object-cover" src="https://picsum.photos/200/200" alt="imagerandom">
+                    <img class="h-70 w-100 object-cover" src="https://picsum.photos/200/200" alt="imagerandom">
+                </div>
+            </section>
+
+            <div class="contact flex flex-col justify-center ù items-center gap-2 bg-[#F5F1E8] h-50">
+                <b class="text-2xl text-center ">Envie d'une pièce sur mesure ?</b>
+
+                <button class="bg-cover bg-[#D9A441] p-2 rounded-xl border text-xl">Contact</button>
+            </div>
+        </div>
+
+    </main>
+    <script>
+        const btn = document.getElementById("menu-btn");
+        const menu = document.getElementById("mobile-menu");
+
+        btn.addEventListener("click", () => {
+            menu.classList.toggle("hidden");
+        });
+    </script>
+</body>
+
+</html>
